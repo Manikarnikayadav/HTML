@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" width="400px" alt="">
+    <img src="./pic1.jpeg" width="400px" alt="">
+
+    <picture>
+       <source media="(min-width: 650px)" srcset="./pc2.jpeg"> 
+       <img src="./pc2.jpeg" alt="">
+    </picture>
+
+    <!-- Image Map -->
+  
+ <img src="pic2.jpeg" usemap="#image-map">
+ <map name="image-map">
+    <area target="" alt="" title="" href="" coords="137,94" shape="rect" onclick="one()">
+    <area target="" alt="" title="" href="" coords="437,313" shape="rect" onclick="two()">
+    <area target="" alt="" title="" href="" coords="147,264" shape="rect" onclick="three()" >
+    <area target="" alt="" title="" href="" coords="" shape="0">
+</map>
+
+<script>
+    function one(){
+        alert("You clicked on 1");
+    }
+    function two(){
+        alert("You clicked on 2");
+    }
+    function three(){
+        alert("You clicked on 3");
+    }
+</script>
+</body>
+</html>
+
+<!-- 
+picture tag is used for media query -->
